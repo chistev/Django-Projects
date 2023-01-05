@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>yui</h1>
+<table>
+    {% for task in tasks %}
+        <tr>
+            <td>{{task.title}}</td>
+        </tr>
+    {% empty %}
+        <h3>Nothing to see here</h3>
+    {% endfor %}
+</table>
+</body>
+</html>
